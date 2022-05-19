@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active:
+    - smart
+  
+  thymeleaf:
+    cache: false
+  
+  mvc:
+    format:
+      date-time: yyyy-MM-dd HH:m:ss
+  datasource:
+    url: jdbc:postgresql://localhost:5432/hr
+    username: postgres
+    password: La12Ci
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    open-in-view: false
+      
+hr:
+  salary:
+      def:
+        percent: 5
+      smart:
+        limit1: 10
+        limit2: 5
+        limit3: 2.5
+        percent1: 10
+        percent2: 5
+        percent3: 2
